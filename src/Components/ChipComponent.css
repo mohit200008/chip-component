@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+ }
+ 
+ .chip-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+ }
+ 
+ .chip {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .chip:hover {
+    background-color: #0056b3;
+ }
+ 
+ .chip span {
+    margin-left: 10px;
+    cursor: pointer;
+ }
+ 
+ .list-item {
+    cursor: pointer;
+    padding: 10px;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .list-item:hover {
+    background-color: #e8e8e8;
+ }
+ 
+ input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    outline: none;
+    transition: border-color 0.3s ease;
+ }
+ 
+ input:focus {
+    border-color: #007BFF;
+ }
+ .chip.highlighted {
+    background-color: #ddd;
+  }
